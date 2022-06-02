@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export class Letter extends Component {
     render() {
         return (
-            <div>A</div>
+            <span className = {this.props.class} >{this.props.char}</span>
         )
     }
 }

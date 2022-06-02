@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
+import Letter from './Letter'
 
 export class Solution extends Component {
   render() {
+    let letterStatus = this.props.letterStatus
+    let word = this.props.solution.word
+    let hint = this.props.solution.hint
     return (
       <div>
-            {[`_` , `_` , `_` , `_`].map(char => <span >{`${char}`} </span> )}
+            { word.split(``).map( char => <Letter char = { letterStatus[char] ? char : `_` }  />  ) }
             <div>
-              <em>Hint</em>
+              <em>{hint}</em>
             </div>
       </div>
     )
