@@ -8,7 +8,7 @@ export class Solution extends Component {
     let hint = this.props.solution.hint
     return (
       <div>
-            { word.split(``).map( char => <Letter char = { letterStatus[char] ? char : `_` }  key = {char} />  ) }
+            { word.split(``).map( char => <Letter char = { letterStatus[char] ? char : `_ ` }  key = {char} />  ) }
             <div>
               <em>{hint}</em>
             </div>

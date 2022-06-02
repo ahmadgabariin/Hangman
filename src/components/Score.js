@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 
 export class Score extends Component {
   render() {
+    let score = this.props.score
     return (
-      <div>{`${this.props.score}`}</div>
+      <div className={score >= 80 ?`high-score`:score >= 50 ? `medium-score` : `low-score`}>{`${score}`}</div>
     )
   }
 }
