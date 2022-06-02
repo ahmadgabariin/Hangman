@@ -25,7 +25,6 @@ class App extends Component {
     for (let i = `A`.charCodeAt() ; i <= `Z`.charCodeAt() ; i++) {
       letterStatus[String.fromCharCode(i)] = false
     }
-    console.log(letterStatus)
     return letterStatus
   }
 

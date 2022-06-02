@@ -7,7 +7,7 @@ export class Letters extends Component {
     return (
       <div>
           <div>Available Letters</div>
-          { Object.keys(letterStatus).map(key => <Letter char = {key} class = { letterStatus[key] ? `used` : `not-used`} /> ) }
+          { Object.keys(letterStatus).map(key => <Letter char = {key} class = { letterStatus[key] ? `used` : `not-used`} key = {key} /> ) }
       </div>
     )
   }
